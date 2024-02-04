@@ -20,10 +20,10 @@ jobs:
 
     steps:
       - name: Checkout Repository
-        uses: actions/checkout@v2.5.0  # Update to the latest version
+        uses: actions/checkout@v2  # Update to the latest version
 
       - name: Set up JDK
-        uses: actions/setup-java@v2.6.4  # Update to the latest version
+        uses: actions/setup-java@v2  # Update to the latest version
         with:
           distribution: 'adopt'
           java-version: '11'
