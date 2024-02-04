@@ -1,0 +1,9 @@
+-------------------------------------------------------------------------------
+Test set: mk.ukim.finki.wp.eshop.selenium.SeleniumScenarioTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.996 s <<< FAILURE! - in mk.ukim.finki.wp.eshop.selenium.SeleniumScenarioTest
+testScenario  Time elapsed: 0.992 s  <<< ERROR!
+mk.ukim.finki.wp.eshop.model.exceptions.UsernameAlreadyExistsException: User with username: user already exists
+	at mk.ukim.finki.wp.eshop.selenium.SeleniumScenarioTest.initData(SeleniumScenarioTest.java:75)
+	at mk.ukim.finki.wp.eshop.selenium.SeleniumScenarioTest.setup(SeleniumScenarioTest.java:55)
+
