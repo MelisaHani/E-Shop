@@ -26,4 +26,4 @@ jobs:
         uses: docker/build-push-action@v4
         with:
           push: true
-          tags: melhani/spring-boot-docker.jar:latest
+          tags: melhani/spring-boot-docker-jar:latest
