@@ -1,0 +1,26 @@
+services:
+  db:
+    ports:
+      - 5432:5432
+    container_name: postgres-container
+    image: postgres
+    environment:
+      - POSTGRES_DB=e-shop
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=123456
+    volumes:
+      - ./init-scripts:/docker-entrypoint-initdb.d
+      - C:\Users\Lundrim\Desktop\WebProgramming\wp-aud\web\postgres_container_data:/var/lib/postgresql/data
+
+  backend:
+    image: spring-boot-docker.jar
+    container_name: spring-app-container
+    ports:
+      - 8080:8080
+    environment:
+      db-url: jdbc:postgresql://db:5432/e-shop
+      db-username: postgres
+      db-password: 123456
+    depends_on:
+      - db
+
